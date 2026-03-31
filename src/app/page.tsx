@@ -32,7 +32,7 @@ export default function Home() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 mb-4 animate-fade-in">
-            Sexcalibur Quiz System
+            Quiz System
           </h1>
           <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Create, view, and take interactive quizzes with ease. Manage your questions, explore answers, and challenge yourself!

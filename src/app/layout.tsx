@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sexcalibur Quiz System',
+  title: 'Quiz System',
   description: 'A modern quiz system built with Next.js',
 }
 

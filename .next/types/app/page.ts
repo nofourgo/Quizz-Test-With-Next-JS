@@ -1,4 +1,4 @@
-// File: C:\Users\Vu Trung Hieu\Documents\GitHub\Sexcalibur\next-quiz\src\app\page.tsx
+// File: C:\Users\Vu Trung Hieu\Documents\GitHub\Quizz Test With Next JS\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

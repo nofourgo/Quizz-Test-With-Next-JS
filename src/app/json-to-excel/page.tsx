@@ -8,6 +8,18 @@ export default function JsonToExcelPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
+  const getJsonErrorLocation = (errMessage: string, content: string): string | null => {
+    const match = /at position (\d+)/.exec(errMessage)
+    if (!match) return null
+
+    const pos = Number(match[1])
+    const prefix = content.slice(0, pos)
+    const lines = prefix.split("\n")
+    const line = lines.length
+    const column = lines[lines.length - 1].length + 1
+    return `dòng ${line}, cột ${column}`
+  }
+
   const handleConvert = () => {
     setError("");
     setMessage("");
@@ -81,9 +93,12 @@ export default function JsonToExcelPage() {
       setMessage("Xuất Excel thành công");
     } catch (err: any) {
       if (err instanceof SyntaxError) {
-        setError("JSON không hợp lệ");
+        const location = getJsonErrorLocation(err.message, jsonInput)
+        setError(
+          `JSON không hợp lệ${location ? ` tại ${location}` : ''}: ${err.message}`,
+        )
       } else {
-        setError(err?.message || "Lỗi khi convert");
+        setError(err?.message || "Lỗi khi convert")
       }
     }
   };

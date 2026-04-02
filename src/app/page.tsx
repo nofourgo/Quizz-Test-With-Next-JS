@@ -83,51 +83,48 @@ export default function Home() {
             questions, explore answers, and challenge yourself!
           </p>
         </div>
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <Link href="/editor" className="block group">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-4xl mb-4">✏️</div>
-              <h2 className="text-2xl font-semibold text-blue-600 mb-3 group-hover:text-blue-700">
+            <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-200 hover:border-indigo-300">
+              <div className="text-5xl mb-4">✏️</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-600 mb-2 group-hover:text-blue-700">
                 Question Editor
               </h2>
-              <p className="text-gray-600 leading-relaxed">
-                Edit and manage quiz questions with drag-and-drop functionality.
-                Create engaging content effortlessly.
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Quản lý và chỉnh sửa câu hỏi nhanh, dễ dùng với giao diện trực quan.
               </p>
             </div>
           </Link>
           <Link href="/json-reader" className="block group">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-4xl mb-4">📄</div>
-              <h2 className="text-2xl font-semibold text-green-600 mb-3 group-hover:text-green-700">
+            <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-200 hover:border-green-300">
+              <div className="text-5xl mb-4">📄</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-green-600 mb-2 group-hover:text-green-700">
                 Excel → JSON
               </h2>
-              <p className="text-gray-600 leading-relaxed">
-                Nhập file Excel và nhận dữ liệu JSON. Hoàn toàn tập trung vào
-                data.
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Chuyển Excel sang JSON nhanh, sạch, dễ copy và dùng tiếp.
               </p>
             </div>
           </Link>
           <Link href="/json-to-excel" className="block group">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-4xl mb-4">🔄</div>
-              <h2 className="text-2xl font-semibold text-indigo-600 mb-3 group-hover:text-indigo-700">
+            <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-200 hover:border-indigo-300">
+              <div className="text-5xl mb-4">🔄</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-indigo-600 mb-2 group-hover:text-indigo-700">
                 JSON → Excel
               </h2>
-              <p className="text-gray-600 leading-relaxed">
-                Dán JSON vào và tải lại file Excel. Chuyển đổi nhanh gọn.
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Dán JSON và xuất file Excel. Hỗ trợ mảng/đối tượng/đa sheet.
               </p>
             </div>
           </Link>
           <Link href="/quiz" className="block group">
-            <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-4xl mb-4">🎯</div>
-              <h2 className="text-2xl font-semibold text-purple-600 mb-3 group-hover:text-purple-700">
+            <div className="bg-white p-6 lg:p-8 rounded-2xl shadow-md hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border border-gray-200 hover:border-purple-300">
+              <div className="text-5xl mb-4">🎯</div>
+              <h2 className="text-2xl md:text-3xl font-bold text-purple-600 mb-2 group-hover:text-purple-700">
                 Take Quiz
               </h2>
-              <p className="text-gray-600 leading-relaxed">
-                Take interactive quizzes with timer and scoring. Test your
-                knowledge and track your progress.
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                Làm bài tập trắc nghiệm, có điểm, thời gian và thống kê hiệu quả.
               </p>
             </div>
           </Link>
@@ -135,7 +132,7 @@ export default function Home() {
         <div className="text-center mt-12">
           <button
             onClick={downloadTemplate}
-            className="bg-green-500 text-white px-8 py-4 rounded-lg hover:bg-green-600 text-lg font-semibold shadow-lg"
+            className="bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-8 py-4 rounded-full hover:from-emerald-600 hover:to-teal-600 text-lg font-semibold shadow-xl hover:shadow-2xl transition duration-300"
           >
             📥 Tải Template Excel
           </button>

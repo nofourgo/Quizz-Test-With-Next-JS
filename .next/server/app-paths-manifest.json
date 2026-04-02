@@ -1,3 +1,5 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/json-to-excel/page": "app/json-to-excel/page.js",
+  "/json-reader/page": "app/json-reader/page.js"
 }
